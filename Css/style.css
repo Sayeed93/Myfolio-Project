@@ -1,0 +1,266 @@
+/* common css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-content{
+    align-items: center;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 46px;
+    color: #02918c;
+}
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+    padding: 25px 0;
+}
+/* common css end */
+
+/* navbar starts here */
+
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width:40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .row .menu ul li{    
+    display: inline-block;
+}
+nav .row .menu ul li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 25px 25px;
+    display: inline-block;
+}
+/* navbar ends here */
+
+/* banner section start here */
+#banner{
+    height: 728px;
+    background-image: url(../Images/background.jpg);
+    background-size: cover;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+}
+#banner .banner_ctn{
+    color: white;
+    text-align: center;
+}
+#banner .banner_ctn h4{
+    font-size: 30px;
+}
+#banner .banner_ctn h1{
+    font-size: 68px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+#banner .banner_ctn p{
+    font-size: 18px;
+}
+#banner .banner_ctn img{
+    margin: 50px 0;
+}
+#banner .banner_ctn a{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 20px 43px;
+}
+/* banner section ends here */
+
+/* about section start here */
+#about{
+    padding: 99px;
+    text-align: center;
+}
+#about .container p{
+    font-size: 16px;
+    color: #7e8287;
+    margin: 0 70px;
+}
+#about .container p span{
+    font-size: 23px;
+    font-weight: 800;
+}
+.about-card{
+    width: 25%;
+    margin: 50px 0;
+    border-right: 1px solid #7e8287;
+    padding: 30px 0;
+}
+.about-card:last-child{
+    border: none;
+}
+.about-card h4{
+    font-size: 16px;
+    color: #7e8287;
+    padding: 25px 0;
+}
+.about-card p{
+    font-size: 11px;
+    color: #7e8287;
+    padding: 0 80px;
+}
+
+/* about section ends here */
+
+/* service section start here */
+#service{
+    background-image: url(../Images/service.jpg);
+    background-size: cover;
+}
+#service .heading{
+    text-align: left;
+}
+.service-ctn{
+    width: 567px;
+    padding: 50px 0;
+}
+.service-ctn p{
+    font-size: 11px;
+    color: #7e8287;
+}
+.service-card{
+    width: 50%;
+    padding: 40px 80px 0 0;
+}
+.service-card h4{
+    font-size: 16px;
+    color: #7e8287;
+}
+
+/* service section ends here */
+
+/* work section start here */
+#work{
+    text-align: center;
+    padding: 90px 0;
+}
+#work .container p{
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+
+#work .work-card{
+    width: 25%;
+    position: relative;
+}
+.work-card img{
+    width: 100%;
+    display: block;
+}
+.work-card .overlay .ctn{
+    text-align: center;
+    padding: 57px 40px;
+}
+.work-card .overlay{
+    position: absolute;
+    top: 20px;
+    color: white;
+    background-color: #02918c7d;
+    inset: 20px;
+    transform: scale(0);
+    transition: 0.30s;
+    opacity: 0;
+}
+.work-card:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+/* work section ends here */
+
+/* contact section start here */
+#contact{
+    text-align: center;
+}
+#contact .container p{
+    text-align: center;
+    color: #7e8287;
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+#contact .contact{
+    background-color: #0b0b0b;
+}
+.contact .form-input{
+    width: 640px;
+    text-align: center;
+    margin: auto;
+    padding: 65px 0 0 0;
+}
+.contact .form-input input{
+    width: 100%;
+    color: #7e8287;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    outline: none;
+    padding-bottom: 10px;
+}
+button{
+    font-size: 16px;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 20px 43px;
+    margin: 70px 0;
+    border: none;
+}
+.contact .large-input{
+    width: 925px;
+}
+
+/* contact section ends here */
+
+/* Footer section start here */
+#footer{
+    background-color: #000000;
+}
+#footer p{
+    font-size: 12px;
+    color: #7e8287;
+    text-align: center;
+    padding: 35px 0;
+}
+/* Footer section ends here */
